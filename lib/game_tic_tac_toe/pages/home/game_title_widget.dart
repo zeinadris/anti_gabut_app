@@ -24,19 +24,10 @@ class GameTitleWidget extends StatelessWidget {
             SizedBox(
               width: 54.0,
               height: 54.0,
-              child: CircleWidget(
-                strokeWidth: 18.0,
-              ),
+              child: Image(image: AssetImage('assets/img/tic-tac-toe.png')),
             ),
             SizedBox(
               width: 24.0,
-            ),
-            SizedBox(
-              width: 54.0,
-              height: 54.0,
-              child: CircleWidget(
-                strokeWidth: 16.0,
-              ),
             ),
           ],
         )

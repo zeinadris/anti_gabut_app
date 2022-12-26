@@ -9,8 +9,8 @@ import '../game/game_page.dart';
 part 'game_title_widget.dart';
 part 'game_mode_selection_widget.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class TicTacPage extends StatelessWidget {
+  const TicTacPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
