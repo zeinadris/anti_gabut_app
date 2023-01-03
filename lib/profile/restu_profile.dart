@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TedosProfile extends StatelessWidget {
-  const TedosProfile({super.key});
+class RestuProfile extends StatelessWidget {
+  const RestuProfile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class TedosProfile extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 64,
-                  child: Image(image: AssetImage('assets/img/tedo_photo.png')),
+                  backgroundImage: AssetImage('assets/img/restu_photo.png'),
                 ),
                 Padding(
                     padding: EdgeInsets.only(top: 24.0),
@@ -27,12 +27,12 @@ class TedosProfile extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Tedo Ana',
+                          'Muhammad Restu Redi Subagya',
                           style: TextStyle(
                               fontSize: 24, fontStyle: FontStyle.italic),
                         ),
                         Text(
-                          '210101000',
+                          'Gentan ,Baki ,Sukoharjo',
                           style: TextStyle(
                               fontSize: 20, fontStyle: FontStyle.italic),
                         ),
@@ -78,7 +78,7 @@ class TedosProfile extends StatelessWidget {
                               child: Padding(
                                 padding: EdgeInsets.only(left: 5, right: 5),
                                 child: Text(
-                                  '089649783850',
+                                  '082329765633',
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontStyle: FontStyle.italic),
@@ -102,7 +102,7 @@ class TedosProfile extends StatelessWidget {
                               child: Padding(
                                 padding: EdgeInsets.only(left: 5, right: 5),
                                 child: Text(
-                                  'Tidak Diketahui',
+                                  'subagyors11@gmail.com',
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontStyle: FontStyle.italic),
@@ -126,7 +126,7 @@ class TedosProfile extends StatelessWidget {
                               child: Padding(
                                 padding: EdgeInsets.only(left: 5, right: 5),
                                 child: Text(
-                                  'Tidak Diketahui',
+                                  'Rest S',
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontStyle: FontStyle.italic),
@@ -150,7 +150,7 @@ class TedosProfile extends StatelessWidget {
               padding: EdgeInsets.only(top: 24, left: 24),
               child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
                 Text(
-                  'About Tedo',
+                  'About Restu',
                   style: TextStyle(fontSize: 24, fontStyle: FontStyle.normal),
                 ),
               ]),
@@ -172,7 +172,7 @@ class TedosProfile extends StatelessWidget {
                       child: Padding(
                           padding: EdgeInsets.all(20),
                           child: const Text(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a ty",
+                            "Hai, Saya orang yang suka membaca cerita ,tapi tidak suka membaca akhir cerita ,bingung ya? sama saya juga hehe ... Programming? hmm menarik",
                             textAlign: TextAlign.justify,
                             style: TextStyle(fontSize: 16.0),
                           )),

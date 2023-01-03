@@ -161,7 +161,7 @@ class _HomePageState extends State<HomePage> {
             itemBuilder: (context, index) {
               if (snakePosition.contains(index)) {
                 return Container(
-                  color: Colors.white,
+                  color: Colors.green,
                 );
               }
               if (index == foodLocation) {
@@ -170,7 +170,7 @@ class _HomePageState extends State<HomePage> {
                 );
               }
               return Container(
-                color: Colors.black,
+                color: Colors.white,
               );
             },
           ),

@@ -22,9 +22,9 @@ class GameTitleWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
             SizedBox(
-              width: 54.0,
-              height: 54.0,
-              child: Image(image: AssetImage('assets/img/tic-tac-toe.png')),
+              width: 80.0,
+              height: 80.0,
+              child: Image(image: AssetImage('assets/img/tic-128.png')),
             ),
             SizedBox(
               width: 24.0,

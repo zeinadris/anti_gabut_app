@@ -83,6 +83,9 @@ flutter:
     - assets/img/zein_photos.jpg
     - assets/img/zens_profile.png
     - assets/img/tedo_photo.png
+    - assets/img/restu_photo.png
+    - assets/img/tic-128.png
+    - assets/img/snake.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

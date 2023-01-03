@@ -1,6 +1,9 @@
 import 'package:anti_gabut_app/game_pong/pong.dart';
 import 'package:anti_gabut_app/game_snake/game_snake.dart';
 import 'package:anti_gabut_app/game_tic_tac_toe/pages/home/home_page.dart';
+import 'package:anti_gabut_app/menu/menu_pong.dart';
+import 'package:anti_gabut_app/menu/menu_snake.dart';
+import 'package:anti_gabut_app/profile/restu_profile.dart';
 import 'package:anti_gabut_app/profile/tedo_profile.dart';
 import 'package:anti_gabut_app/profile/zens_profile.dart';
 import 'package:flutter/material.dart';
@@ -29,11 +32,14 @@ class _BottomNavBar extends State<BottomNavBar> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const ListTile(
-                    leading:
-                        Image(image: AssetImage('assets/img/ping-pong.png')),
-                    title: Text("Game Pong"),
-                    subtitle: Text("Tangkap bola biji anda dengan spond."),
+                  Padding(
+                    padding: EdgeInsets.only(top: 24),
+                    child: ListTile(
+                      leading:
+                          Image(image: AssetImage('assets/img/ping-pong.png')),
+                      title: Text("Game Pong"),
+                      subtitle: Text("Tangkap bola biji dengan spond."),
+                    ),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -41,7 +47,7 @@ class _BottomNavBar extends State<BottomNavBar> {
                       TextButton(
                         child: const Text('MAINKAN GAME'),
                         onPressed: () {
-                          Get.to(() => Pong());
+                          Get.to(() => MenuPong());
                         },
                       ),
                       const SizedBox(width: 8),
@@ -61,11 +67,15 @@ class _BottomNavBar extends State<BottomNavBar> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const ListTile(
-                    leading:
-                        Image(image: AssetImage('assets/img/tic-tac-toe.png')),
-                    title: Text("Tic Tac Toe"),
-                    subtitle: Text("Asah kemampuan berpikir dengan game ini."),
+                  Padding(
+                    padding: EdgeInsets.only(top: 24),
+                    child: ListTile(
+                      leading: Image(
+                          image: AssetImage('assets/img/tic-tac-toe.png')),
+                      title: Text("Tic Tac Toe"),
+                      subtitle:
+                          Text("Asah kemampuan berpikir dengan game ini."),
+                    ),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -89,15 +99,18 @@ class _BottomNavBar extends State<BottomNavBar> {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: Card(
-              color: Colors.yellowAccent,
+              color: Colors.redAccent,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const ListTile(
-                    leading:
-                        Image(image: AssetImage('assets/img/tic-tac-toe.png')),
-                    title: Text("Game Snake"),
-                    subtitle: Text("Asah kemampuan berpikir dengan game ini."),
+                  Padding(
+                    padding: EdgeInsets.only(top: 24),
+                    child: ListTile(
+                      leading: Image(image: AssetImage('assets/img/snake.png')),
+                      title: Text("Game Snake"),
+                      subtitle:
+                          Text("Gerakan ular anda untuk menangkap makanan"),
+                    ),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -105,7 +118,7 @@ class _BottomNavBar extends State<BottomNavBar> {
                       TextButton(
                         child: const Text('MAINKAN GAME'),
                         onPressed: () {
-                          Get.to(() => const GameSnake());
+                          Get.to(() => const MenuSnake());
                         },
                       ),
                       const SizedBox(width: 8),
@@ -146,7 +159,7 @@ class _BottomNavBar extends State<BottomNavBar> {
                         Get.to(() => ZensProfile());
                       },
                       child: Text(
-                        "ZEIN ADRI S",
+                        "ZEIN",
                         style: TextStyle(fontSize: 36),
                       )),
                 )
@@ -191,16 +204,16 @@ class _BottomNavBar extends State<BottomNavBar> {
                 CircleAvatar(
                   radius: 128,
                   backgroundColor: Colors.teal[100],
-                  child: Image(image: AssetImage('assets/img/zein_photos.jpg')),
+                  backgroundImage: AssetImage('assets/img/restu_photo.png'),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 20),
                   child: ElevatedButton(
                       onPressed: () {
-                        Get.to(() => ZensProfile());
+                        Get.to(() => RestuProfile());
                       },
                       child: Text(
-                        "ZEIN ADRI S",
+                        "RESTU",
                         style: TextStyle(fontSize: 36),
                       )),
                 )
