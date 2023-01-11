@@ -54,8 +54,7 @@ class MenuSnake extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const BottomNavBar()),
+                        MaterialPageRoute(builder: (context) => BottomNavBar()),
                       );
                     },
                     child: Text(

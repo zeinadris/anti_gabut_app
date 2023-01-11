@@ -1,4 +1,5 @@
 import 'package:anti_gabut_app/menu/menu.dart';
+import 'package:anti_gabut_app/menu/menu_pong.dart';
 import 'package:flutter/material.dart';
 import './ball.dart';
 import './bat.dart';
@@ -67,10 +68,8 @@ class _PongState extends State<Pong> with SingleTickerProviderStateMixin {
                 child: Text('Tidak'),
                 onPressed: () {
                   Navigator.of(context).pop();
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const BottomNavBar()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MenuPong()));
                 },
               )
             ],

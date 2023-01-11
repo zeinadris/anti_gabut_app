@@ -42,7 +42,7 @@ class GameModeSelectionWidget extends StatelessWidget {
           label: "Kembali ke Menu",
           onPressed: () {
             Get.to(
-              () => const BottomNavBar(),
+              () => BottomNavBar(),
             );
           },
         ),

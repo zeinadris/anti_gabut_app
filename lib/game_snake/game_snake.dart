@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:anti_gabut_app/menu/menu.dart';
+import 'package:anti_gabut_app/menu/menu_snake.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -13,7 +14,7 @@ class GameSnake extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Game Snake',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -120,10 +121,8 @@ class _HomePageState extends State<HomePage> {
                 child: const Text('Play Again')),
             TextButton(
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const BottomNavBar()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MenuSnake()));
                 },
                 child: const Text('Exit'))
           ],
@@ -170,7 +169,7 @@ class _HomePageState extends State<HomePage> {
                 );
               }
               return Container(
-                color: Colors.white,
+                color: Colors.blueGrey,
               );
             },
           ),

@@ -1,16 +1,16 @@
-import 'package:anti_gabut_app/game_pong/pong.dart';
-import 'package:anti_gabut_app/game_snake/game_snake.dart';
+import 'package:anti_gabut_app/data/data_team.dart';
+
 import 'package:anti_gabut_app/game_tic_tac_toe/pages/home/home_page.dart';
 import 'package:anti_gabut_app/menu/menu_pong.dart';
 import 'package:anti_gabut_app/menu/menu_snake.dart';
-import 'package:anti_gabut_app/profile/restu_profile.dart';
-import 'package:anti_gabut_app/profile/tedo_profile.dart';
-import 'package:anti_gabut_app/profile/zens_profile.dart';
+
+import 'package:anti_gabut_app/profile/team_profile.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class BottomNavBar extends StatefulWidget {
-  const BottomNavBar({super.key});
+  BottomNavBar({super.key});
 
   @override
   State<BottomNavBar> createState() => _BottomNavBar();
@@ -132,97 +132,11 @@ class _BottomNavBar extends State<BottomNavBar> {
       ]),
     ),
     Center(
-        child: GridView.count(
-      primary: false,
-      padding: const EdgeInsets.all(20),
-      crossAxisSpacing: 10,
-      mainAxisSpacing: 10,
-      crossAxisCount: 1,
-      children: <Widget>[
-        ClipRRect(
-          borderRadius: BorderRadius.circular(20),
+      child: SafeArea(
           child: Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.teal[100],
-            child: Column(
-              children: <Widget>[
-                CircleAvatar(
-                  radius: 128,
-                  backgroundColor: Colors.teal[100],
-                  child:
-                      Image(image: AssetImage('assets/img/zens_profile.png')),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 20),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Get.to(() => ZensProfile());
-                      },
-                      child: Text(
-                        "ZEIN",
-                        style: TextStyle(fontSize: 36),
-                      )),
-                )
-              ],
-            ),
-          ),
-        ),
-        ClipRRect(
-          borderRadius: BorderRadius.circular(20),
-          child: Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.teal[100],
-            child: Column(
-              children: <Widget>[
-                CircleAvatar(
-                  radius: 128,
-                  backgroundColor: Colors.teal[100],
-                  child: Image(image: AssetImage('assets/img/tedo_photo.png')),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 20),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Get.to(() => TedosProfile());
-                      },
-                      child: Text(
-                        "TEDO",
-                        style: TextStyle(fontSize: 36),
-                      )),
-                )
-              ],
-            ),
-          ),
-        ),
-        ClipRRect(
-          borderRadius: BorderRadius.circular(20),
-          child: Container(
-            padding: const EdgeInsets.all(8),
-            color: Colors.teal[100],
-            child: Column(
-              children: <Widget>[
-                CircleAvatar(
-                  radius: 128,
-                  backgroundColor: Colors.teal[100],
-                  backgroundImage: AssetImage('assets/img/restu_photo.png'),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 20),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Get.to(() => RestuProfile());
-                      },
-                      child: Text(
-                        "RESTU",
-                        style: TextStyle(fontSize: 36),
-                      )),
-                )
-              ],
-            ),
-          ),
-        ),
-      ],
-    )),
+        child: ListTeam(),
+      )),
+    ),
     SafeArea(
       child: Center(
         child: Column(
@@ -252,7 +166,7 @@ class _BottomNavBar extends State<BottomNavBar> {
                       child: Padding(
                         padding: EdgeInsets.all(24),
                         child: Text(
-                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                          "Anti Gabut adalah aplikasi yang dibuat agar orang-orang yang mempunyai waktu luang bisa menikmati berbagai game atau permainan yang seru dan menarik. Anda pasti sering merasa jenuh ketika tidak memiliki kegiatan yang bisa dilakukan pada waktu kosong, bingung mau melakukan apa? Ayo coba Anti Gabut dan nikmati waktu luang anda dengan memainkan macam-macam permainan yang menarik dan mudah untuk dimainkan.",
                           style: TextStyle(fontSize: 14),
                           textAlign: TextAlign.justify,
                         ),
@@ -303,42 +217,36 @@ class _BottomNavBar extends State<BottomNavBar> {
   }
 }
 
-// class SnakeButton extends StatefulWidget {
-//   const SnakeButton({Key? key}) : super(key: key);
+class ListTeam extends StatefulWidget {
+  const ListTeam({Key? key}) : super(key: key);
 
-//   @override
-//   _SnakeButton createState() => _SnakeButton();
-// }
+  @override
+  _ListTeam createState() => _ListTeam();
+}
 
-// class _SnakeButton extends State<SnakeButton> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return TextButton(
-//       child: const Text('MAINKAN GAME'),
-//       onPressed: () {
-//         Navigator.push(context,
-//             MaterialPageRoute(builder: (context) => const GameSnake()));
-//       },
-//     );
-//   }
-// }
-
-// class TicButton extends StatefulWidget {
-//   const TicButton({Key? key}) : super(key: key);
-
-//   @override
-//   _TicButton createState() => _TicButton();
-// }
-
-// class _TicButton extends State<TicButton> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return TextButton(
-//       child: const Text('MAINKAN GAME'),
-//       onPressed: () {
-//         Navigator.push(
-//             context, MaterialPageRoute(builder: (context) => const HomePage()));
-//       },
-//     );
-//   }
-// }
+class _ListTeam extends State<ListTeam> {
+  DataProfile dataProfile = DataProfile();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView.builder(
+          itemCount: dataProfile.listprofile.length,
+          itemBuilder: (_, index) => Card(
+                  child: InkWell(
+                onTap: (() {
+                  print('pencet no $index');
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (_) => TeamProfil(
+                            nomor: '$index',
+                            modelProfil1: dataProfile.listprofile[index],
+                          )));
+                }),
+                child: ListTile(
+                  leading: Image.asset('${dataProfile.listprofile[index].img}'),
+                  title: Text('${dataProfile.listprofile[index].name}'),
+                  subtitle: Text('${dataProfile.listprofile[index].nim}'),
+                ),
+              ))),
+    );
+  }
+}
