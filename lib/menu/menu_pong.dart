@@ -1,7 +1,7 @@
 import 'package:anti_gabut_app/game_pong/pong.dart';
 import 'package:flutter/material.dart';
 
-import 'menu.dart';
+import 'menu_bottom_nav_bar.dart';
 
 class MenuPong extends StatelessWidget {
   const MenuPong({super.key});

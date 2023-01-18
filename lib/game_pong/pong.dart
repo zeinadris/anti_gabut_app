@@ -1,4 +1,4 @@
-import 'package:anti_gabut_app/menu/menu.dart';
+import 'package:anti_gabut_app/menu/menu_bottom_nav_bar.dart';
 import 'package:anti_gabut_app/menu/menu_pong.dart';
 import 'package:flutter/material.dart';
 import './ball.dart';
@@ -49,7 +49,7 @@ class _PongState extends State<Pong> with SingleTickerProviderStateMixin {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('Tamat bola biji anda terjatuh'),
+            title: Text('Tamat bola anda terjatuh'),
             content: Text('Mulai main lagi?'),
             actions: <Widget>[
               TextButton(

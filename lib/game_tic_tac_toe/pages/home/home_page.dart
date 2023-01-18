@@ -1,4 +1,4 @@
-import 'package:anti_gabut_app/menu/menu.dart';
+import 'package:anti_gabut_app/menu/menu_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

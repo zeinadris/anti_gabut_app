@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:math';
-import 'package:anti_gabut_app/menu/menu.dart';
+import 'package:anti_gabut_app/menu/menu_bottom_nav_bar.dart';
 import 'package:anti_gabut_app/menu/menu_snake.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

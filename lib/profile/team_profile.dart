@@ -1,5 +1,5 @@
 import 'package:anti_gabut_app/data/profile_model.dart';
-import 'package:anti_gabut_app/menu/menu.dart';
+import 'package:anti_gabut_app/menu/menu_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable

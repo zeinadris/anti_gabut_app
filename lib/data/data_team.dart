@@ -25,6 +25,18 @@ class DataProfile {
       fb: 'Rest S',
       desc:
           "Hai, Saya orang yang suka membaca cerita ,tapi tidak suka membaca akhir cerita ,bingung ya? sama saya juga hehe ... Programming? hmm menarik",
+    ),
+    ModelProfile(
+      name: 'Tedo Anasta Risqy',
+      nim: '210101105',
+      img: 'assets/img/tedo_photo.png',
+      email: 'tedoar400@gmail.com',
+      jobs: 'Gamer',
+      alamat: 'Wirogunan, Kartasura',
+      wa: '089649783850',
+      fb: '-',
+      desc:
+          "Hai, Saya manusia saya suka makan,agar saya bisa bisa mengerjakan programing,kalok kalain bingung apa nyambungnya? saya juga gak tau",
     )
   ];
 }

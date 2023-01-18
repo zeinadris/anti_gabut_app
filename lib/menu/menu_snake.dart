@@ -1,5 +1,5 @@
 import 'package:anti_gabut_app/game_snake/game_snake.dart';
-import 'package:anti_gabut_app/menu/menu.dart';
+import 'package:anti_gabut_app/menu/menu_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class MenuSnake extends StatelessWidget {

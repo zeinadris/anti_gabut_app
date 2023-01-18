@@ -38,7 +38,7 @@ class _BottomNavBar extends State<BottomNavBar> {
                       leading:
                           Image(image: AssetImage('assets/img/ping-pong.png')),
                       title: Text("Game Pong"),
-                      subtitle: Text("Tangkap bola biji dengan spond."),
+                      subtitle: Text("Tangkap bola dengan spond."),
                     ),
                   ),
                   Row(
@@ -212,7 +212,7 @@ class _BottomNavBar extends State<BottomNavBar> {
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
-      ),
+      ), 
     );
   }
 }
